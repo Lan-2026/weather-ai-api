@@ -1,0 +1,29 @@
+{
+  "name": "backend-project",
+  "version": "1.0.0",
+  "description": "Node.js backend project",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon --watch src --watch .env src/server.js",
+    "start": "node src/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "openai": "^6.33.0",
+    "redis": "^5.11.0",
+    "serverless-http": "^4.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.3",
+    "globals": "^17.4.0",
+    "nodemon": "^3.1.14"
+  }
+}
