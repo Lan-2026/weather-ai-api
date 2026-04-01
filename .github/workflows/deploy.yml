@@ -42,4 +42,7 @@ jobs:
         run: |
           sam deploy \
             --no-confirm-changeset \
-            --no-fail-on-empty-changeset
+            --no-fail-on-empty-changeset \
+            --parameter-overrides \
+              GroqApiKey="${{ secrets.GROQ_API_KEY }}" \
+              JwtSecret="${{ secrets.JWT_SECRET }}"
