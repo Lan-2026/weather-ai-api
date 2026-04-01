@@ -8,7 +8,7 @@ Resources:
     Properties:
       CodeUri: .
       Handler: src/lambda.handler
-      Runtime: nodejs20.x
+      Runtime: nodejs22.x
       MemorySize: 512
       Timeout: 10
       Environment:
