@@ -9,7 +9,9 @@ const login = asyncHandler(async (req, res) => {
     return res.status(400).json({ error: "Username required" });
   }
 
-  const token = jwt.sign({ username }, "secretKey", { expiresIn: "1h" });
+  const token = jwt.sign({ username }, process.env.JWT_SECRET, {
+    expiresIn: "1h",
+  });
 
   res.json({ token });
 });

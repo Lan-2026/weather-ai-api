@@ -9,6 +9,7 @@ const userRoutes = require("./routes/userRoutes");
 const weatherRoutes = require("./routes/weatherRoutes");
 const errorHandler = require("./middleware/errorHandler");
 const aiRoutes = require("./routes/aiRoutes");
+const ragRoutes = require("./routes/rag.routes");
 
 app.use(express.json());
 app.use(logger);
@@ -18,6 +19,7 @@ app.use(logger);
 app.use("/users", userRoutes);
 app.use("/weather", weatherRoutes);
 app.use("/ai", aiRoutes);
+app.use("/rag", ragRoutes);
 
 // test route
 app.get("/hello", (req, res) => {
